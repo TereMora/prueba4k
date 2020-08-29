@@ -1,0 +1,20 @@
+
+.header {
+    color: #E08CEC;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #008080;
+}
+
+.campos{
+    display: inline-flex;
+}
+
+.message{
+    text-align: center;
+    color: red;
+}

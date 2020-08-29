@@ -1,0 +1,30 @@
+
+	<!-- Main Content -->
+	<div class="container-fluid">
+		<div class="row main-content bg-success text-center">
+			<div class="col-md-4 text-center company__info">
+				<img src="../../assets/logo.png">
+				<h4 class="company_title">Bienvenidos</h4>
+			</div>
+			<div class="col-md-8 col-xs-12 col-sm-12 login_form ">
+				<div class="container-fluid">
+                        <h2>Ingresa</h2>
+					<div class="row">
+						<form #formularioLogin="ngForm" class="form-group" (ngSubmit)="entrar()">
+								<input type="text" name="username" id="username" class="form__input" placeholder="Username" [(ngModel)]="loginModel.email">
+								<!-- <span class="fa fa-lock"></span> -->
+                                <input type="password" name="password" id="password" class="form__input" placeholder="Password" [(ngModel)]="loginModel.password">
+                                <button type="submit" class="btn" >Entrar</button>
+                                <div class=" message">
+                                    {{resultRegistro | json }}
+                                </div> 
+								<!-- input type="checkbox" name="remember_me" id="remember_me" class="">
+								<label for="remember_me">Recordar</label -->
+								
+						</form>
+					</div>
+						<p>Si no tienes cuenta   <a routerLink="/registro" routerLinkActive="active">Registrate</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
