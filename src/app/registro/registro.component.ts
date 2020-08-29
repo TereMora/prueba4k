@@ -49,7 +49,7 @@ export class RegistroComponent implements OnInit {
         }).catch((e) => {
             this.errorCiudades = true;
             console.log(e);
-            this.resultRegistro = e.error.errors;
+            this.resultRegistro = e.error.error;
         });
     
   }
